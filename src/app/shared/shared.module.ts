@@ -6,9 +6,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [PricePipe, NavBarComponent, HeaderComponent, FooterComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, NgbCollapseModule, NgbModule],
   exports: [PricePipe, NavBarComponent, HeaderComponent, FooterComponent],
 })
 export class SharedModule {}
